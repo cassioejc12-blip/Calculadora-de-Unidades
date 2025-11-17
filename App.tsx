@@ -67,6 +67,14 @@ export default function App() {
     });
   };
 
+  const handleClear = () => {
+    setProductName('');
+    setTotalUnits('');
+    setUnitsPerPackage('');
+    setResult(null);
+    setError('');
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4 selection:bg-red-200 relative">
       <main className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md flex-shrink-0 border-t-4 border-red-600">
@@ -134,7 +142,14 @@ export default function App() {
             </div>
           </div>
 
-          <div>
+          <div className="flex items-center gap-4 pt-2">
+            <button
+              type="button"
+              onClick={handleClear}
+              className="w-full flex justify-center py-3 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-transform transform hover:scale-105"
+            >
+              Limpar
+            </button>
             <button
               type="submit"
               className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-transform transform hover:scale-105"
