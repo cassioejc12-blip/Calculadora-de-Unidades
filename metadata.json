@@ -1,0 +1,5 @@
+{
+  "name": "Calculadora de Unidades de Produtos",
+  "description": "Uma calculadora simples para determinar o número de pacotes necessários com base no total de unidades e unidades por pacote, estilizada com as cores da Coca-Cola FEMSA.",
+  "requestFramePermissions": []
+}
